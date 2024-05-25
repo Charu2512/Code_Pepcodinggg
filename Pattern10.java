@@ -6,7 +6,7 @@ Write your code in this editor and press "Run" button to execute it.
 
 *******************************************************************************/
 /*
- Pattern 9
+ Pattern 10
 
   
       *       
