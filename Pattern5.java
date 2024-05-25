@@ -16,18 +16,19 @@ Write your code in this editor and press "Run" button to execute it.
   
   
 
+
 public class Main
 {
 	public static void main(String[] args) {
 		//System.out.println("Hello World");
-		int n=7;
+		int n=5;
 		
 		int rsp=(n-1)/2;
 		    
 		    int lsp=rsp;
 		    int st=n-2*rsp;
 		    int i;
-		for( i=0;i<=rsp;i++)
+		for( i=0;i<n;i++)
 		{   
 		    
 		    int j;
@@ -47,36 +48,18 @@ public class Main
 		    
 		    
 		   System.out.println("\n");
+		   if(i<(n/2))
+		   {
 		   st+=2;
 		   lsp--;
+		       
+		   }
+		   else{
+		        st-=2;
+		        lsp++;
+		   }
 		}
 		
-		 st-=2;
-		   lsp++;
-		   
-		while(i<n)
-		{
-		    st-=2;
-		    lsp++;
-		     
-		    int j;
-		   for(j=1;j<=lsp;j++)
-		    {
-		        System.out.print("  ");
-		    }
-		    for(j=1;j<=st;j++)
-		    {
-		        System.out.print("* ");
-		    }
-		    
-		    for(j=1;j<=lsp;j++)
-		    {
-		        System.out.print("  ");
-		    }
-		    
-		    i++;
-		    System.out.println("\n");
-		}
 	
 }
 }
